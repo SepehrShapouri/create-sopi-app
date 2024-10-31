@@ -24,7 +24,7 @@ const path = require('path');
     const { projectName, usePrisma } = answers;
 
   // Clone the base template using degit
-  const emitter = degit('your-username/sopi-template', { cache: false, force: true });
+  const emitter = degit('sepehrshapouri/sopi-template', { cache: false, force: true });
   await emitter.clone(projectName);
 
   // Navigate to the new project directory
