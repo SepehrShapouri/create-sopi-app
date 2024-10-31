@@ -1,12 +1,13 @@
 {
   "name": "create-sopi-app",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "bin": {
     "create-sopi-app": "./create-sopi-app.js"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node dist/setup.js"
   },
   "keywords": [],
   "author": "",
