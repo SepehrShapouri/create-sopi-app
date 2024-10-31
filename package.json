@@ -1,8 +1,8 @@
 {
   "name": "create-sopi-app",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "bin": {
-    "create-sopi-app":"./create-sopi-app.js"
+    "create-sopi-app": "./create-sopi-app.js"
   },
   "main": "index.js",
   "scripts": {
