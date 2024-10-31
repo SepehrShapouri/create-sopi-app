@@ -6,23 +6,22 @@ const fs = require('fs');
 const path = require('path');
 
 (async () => {
-  console.log('Creating your Sopi Next.js app...');
-
-  // Prompt for project name
-  const { projectName, usePrisma } = await inquirer.prompt([
-    {
-      type: 'input',
-      name: 'projectName',
-      message: 'Enter your project name:',
-      default: 'my-sopi-app'
-    },
-    {
-      type: 'confirm',
-      name: 'usePrisma',
-      message: 'Would you like to add Prisma ORM to the project?',
-      default: false
-    }
-  ]);
+    const prompt = inquirer.createPromptModule();
+    const answers = await prompt([
+      {
+        type: 'input',
+        name: 'projectName',
+        message: 'Enter your project name:',
+        default: 'my-sopi-app'
+      },
+      {
+        type: 'confirm',
+        name: 'usePrisma',
+        message: 'Would you like to add Prisma ORM to the project?',
+        default: false
+      }
+    ]);
+    const { projectName, usePrisma } = answers;
 
   // Clone the base template using degit
   const emitter = degit('your-username/sopi-template', { cache: false, force: true });
