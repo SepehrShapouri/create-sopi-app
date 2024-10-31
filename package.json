@@ -1,6 +1,6 @@
 {
   "name": "create-sopi-app",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "bin": {
     "create-sopi-app": "./create-sopi-app.js"
   },

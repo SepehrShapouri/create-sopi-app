@@ -18,7 +18,7 @@ const path = require('path');
         type: 'confirm',
         name: 'usePrisma',
         message: 'Would you like to add Prisma ORM to the project?',
-        default: false
+        default: true
       }
     ]);
     const { projectName, usePrisma } = answers;
