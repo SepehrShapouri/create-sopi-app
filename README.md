@@ -33,6 +33,7 @@ Running `npx create-sopi-app` will guide you through a few setup questions and g
    ```
 
 2. **Answer Prompts:**
+
    - Project name: Specify the name for your new project.
    - Prisma ORM: Choose if you want to add Prisma ORM for database management.
 
@@ -55,9 +56,8 @@ Your generated project will have the following structure:
 │   └── schema.prisma     # Basic Prisma schema
 ├── public/               # Public assets
 ├── src/                  # Main project files
-│   ├── pages/            # Next.js pages
-│   ├── components/       # ShadCN components
-│   └── styles/           # Global styles
+│   ├── app/              # Next.js papp directory
+│   ├── components/ui/    # ShadCN components
 ├── package.json
 └── tsconfig.json         # TypeScript configuration
 ```
@@ -81,11 +81,13 @@ Setup complete! Run your app with the following commands:
 Contributions are welcome! Follow the steps below to set up the development environment:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/create-sopi-app.git
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
